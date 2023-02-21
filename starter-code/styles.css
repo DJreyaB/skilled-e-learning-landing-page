@@ -1,0 +1,140 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+
+ /* colors */
+:root {
+    --dark-grey-blue: hsl(234, 25%, 52%);
+    --dark-blue: hsl(233, 54%, 16%);
+    --grey: hsl(232, 10%, 56%);
+    --red-pink: hsl(341, 92%, 62%);
+    --light-pink: hsl(341, 100%, 83%);
+    --white: hsl(0, 0%, 100%);
+    --red-grad: hsl(322, 87%, 55%);
+    --blue-grad: hsl(237, 100%, 64%);
+    --orange: hsl(13, 100%, 64%);
+ }
+
+ /* fonts
+ font-family: 'Plus Jakarta Sans', sans-serif; 
+ */
+
+ /* reset */
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    background: var
+}
+
+a {
+    text-decoration: none;
+    color: var(--red-pink);
+}
+
+a:hover {
+    color: var(--light-pink);
+}
+
+.start {
+    cursor: pointer;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header.menu {
+    background-color: var(--light-pink);
+} */
+
+div.banner {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+
+div.container {
+    display: flex;
+}
+
+div.title-card {
+    margin-top: 100px;
+    width: 400px;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    padding-bottom: 56px;
+}
+
+div.circle {
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+div.card {
+    border: 1px solid var(--white);
+    box-shadow: 0 1px 2px #000000;
+}
+
+.card {
+    background: var(--white);
+    padding:3em 1.5em 2em;
+    border-radius:1em;
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+    position:relative;
+}
+
+.icon {
+    position:absolute;
+    top:0;
+    transform:translateY(-50%);
+    width:3em;
+    height:3em;
+    background: rgb(242,47,160);
+    background: linear-gradient(0deg, rgba(242,47,160,1) 0%, rgba(255,108,77,1) 100%); 
+    color:white;
+    box-sizing:border-box;
+    border-radius:50%;
+}
+
+img {
+    width: 100%;
+}
+
+footer.foot {
+    background-color: var(--dark-grey-blue);
+}
+ 
+
+@media only screen and (max-width: 825px) {
+    
+    div.grid {
+        grid-template-columns: repeat(2, 1fr);    
+    }
+}
+
+
+@media only screen and (max-width: 376px) {
+
+    div.grid {
+        grid-template-columns: 1fr;    
+    }  
+}
+
