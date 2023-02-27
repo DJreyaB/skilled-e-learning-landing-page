@@ -28,7 +28,7 @@
  }
 
 body {
-    background: var
+    font-family: 'Plus Jakarta Sans', sans-serif; 
 }
 
 a {
@@ -40,8 +40,32 @@ a:hover {
     color: var(--light-pink);
 }
 
+h1 {
+    font-size: 56px;   
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 18px;
+    color: var(--grey);
+}
+
 .start {
     cursor: pointer;
+}
+
+button.start {
+    padding: 10px 30px;
+    border-radius: 30px;
 }
 
 .bar {
@@ -66,32 +90,34 @@ div.banner {
 
 div.container {
     display: flex;
+    background: linear-gradient(180deg, var(--white) , #e0e1f0 100%);
 }
 
 div.title-card {
     margin-top: 100px;
-    width: 400px;
+    width: 457px;
+    height: 400px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button.start-1 {
+    background-color: var(--dark-blue);
 }
 
 div.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 30px;
-    padding-bottom: 56px;
-}
-
-div.circle {
-    border-radius: 10px;
-    background-color: #000000;
+    grid-row-gap: 56px;
+    margin: 50px;
 }
 
 div.card {
-    border: 1px solid var(--white);
-    box-shadow: 0 1px 2px #000000;
-}
-
-.card {
+    border: none;
+    box-shadow: 0 1px 2px var(--grey);
     background: var(--white);
     padding:3em 1.5em 2em;
     border-radius:1em;
@@ -107,15 +133,25 @@ div.card {
     transform:translateY(-50%);
     width:3em;
     height:3em;
-    background: rgb(242,47,160);
-    background: linear-gradient(0deg, rgba(242,47,160,1) 0%, rgba(255,108,77,1) 100%); 
+    background: linear-gradient(0deg, var(--red-grad), var(--orange)); 
     color:white;
     box-sizing:border-box;
     border-radius:50%;
 }
 
-img {
-    width: 100%;
+div.card-1 {
+    background: linear-gradient(0deg, var(--red-grad), var(--orange)); 
+    color: var(--white);
+    border: none;
+}
+
+button {
+    border: none;
+    color: var(--white);
+}
+
+button.blue-grad {
+    background: linear-gradient(0deg, var(--red-grad), var(--blue-grad)); 
 }
 
 footer.foot {
@@ -126,7 +162,9 @@ footer.foot {
 @media only screen and (max-width: 825px) {
     
     div.grid {
-        grid-template-columns: repeat(2, 1fr);    
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 42px; 
+        margin: 30px 20px;
     }
 }
 
@@ -134,7 +172,8 @@ footer.foot {
 @media only screen and (max-width: 376px) {
 
     div.grid {
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr;
+        grid-row-gap: 56px;    
     }  
 }
 
